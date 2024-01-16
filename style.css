@@ -11,7 +11,7 @@ body{
 }
 
 h1{
-    margin: 32px 0;
+    margin: 64px 0;
     font-size: 60px;
     text-align: center;
     font-weight: 800;
@@ -26,27 +26,27 @@ h1{
 .menu-card{
     text-align: center;
     background-color: rgb(255, 197, 239);
-    width: 500px;
+    width: 600px;
     border-radius: 50px;
-    padding: 32px;
+    padding-bottom: 32px;
     margin-bottom: 32px;
 }
 
 h2{
     font-size: 30px;
-    margin: 16px 0;
+    margin: 32px 0;
     font-weight: 700;
 }
 
 h3{
     font-size: 20px;
-    margin: 8px 0;
+    margin: 16px 0;
     font-weight: 600;
 }
 
 li{
     font-size: 13px;
-    margin: 4px 0;
+    margin: 8px 0;
     font-weight: 400;
 }
 
@@ -61,20 +61,72 @@ li{
     position: absolute;
     left: 0;
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgb(161, 254, 223);
     border-radius: 50px;
-    margin-top: 125px;
-    margin-left: 300px;
-    padding: 0 16px 32px 16px;
+    margin-left: 250px;
+    padding: 0 32px 32px 32px;
 }
 
-.map-header{
+.map-header, .boba-header{
     font-size: 45px;
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 
-.map-img{
-    width: 500px;
+.contact-us{
+    background-color: rgb(254, 195, 195);
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 250px;
+    border-radius: 50px;
+    margin-top: 420px;
+    margin-right: 120px;
+}
 
+.your-boba{
+    background-color: rgb(252, 241, 177);
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    border-radius: 50px;
+    margin-right: 80px;
+    padding-bottom: 32px;
+}
+
+.choose-boba{
+    width: 250px;
+    margin-left: 130px;
+}
+
+.sizes, .supplements{
+    text-align: center;
+}
+
+.order{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-go-on{
+    margin-top: 30px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgb(24, 24, 24);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-go-on:hover{
+    border: 3px solid rgb(255, 229, 80);
 }
 
 footer{

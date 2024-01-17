@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boba Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
@@ -18,51 +19,10 @@
             </div> 
         </nav> 
     </header>
+    <h1>---- Ice Boba Shop ----</h1>
     <div class="content">
-        <h1>---- Boba Shop ----</h1>
-        <div class="menu">
-            <div class="menu-card">
-            <h1>--- Notre carte ---</h1>
-            <h2>-- Nos Bubble Tea --</h2>
-            <h3>A base de lait</h3>
-            <ul>
-                <li>Sucre brun</li>
-                <li>Thé Matcha</li>
-                <li>Fraise</li>
-                <li>Café</li>
-                <li>Chocolat</li>
-                <li>Taro</li>
-            </ul>
-            <h3>A base de thé</h3>
-            <ul>
-                <li>Tea noir</li>
-                <li>Thé vert</li>
-                <li>Thé vert menthe</li>
-                <li>Thé vert jasmin</li>
-                <li>Rooibos</li>
-                <li>Thé noir fruits rouges</li>
-            </ul>
-
-            <h2>-- Nos glaces et desserts --</h2>
-            <ul>
-                <li>Coupe glacée</li>
-                <li>Crêpes garnies</li>
-                <li>Gauffres</li>
-                <li>Yaourt glacé</li>
-                <li>Mochi glacé</li>
-            </ul>
-
-            <h2>-- Nos boissons chaudes --</h2>
-            <ul>
-                <li>Iced Americano</li>
-                <li>Matcha latte</li>
-                <li>Caramel Macchiato</li>
-                <li>Chocolat chaud</li>
-                <li>Latte</li>
-                <li>Dalgona Coffee</li>
-            </ul>
-        </div>
-        <div class="maps">
+        <div class="map">
+            <div class="maps">
         <h1 class="map-header">--- Où nous <br>trouver ?---</h1>
         <h3>174 Rue Solférino, 59800 Lille</h3>
         <h3>Horaires:</h3>
@@ -87,51 +47,106 @@
             dimanche
             14:30 – 01:00</p>
         </div>
-        <div class="contact-us">
-            <h2>-- CONTACT --</h2>
-            <p>03 23 45 27 49</p>
-            <p>boba-shop@gmail.com</p>
-            <div class="social-media">
+        </div>
+        <div class="contact">
+            <div class="contact-us">
+                <h2>-- CONTACT --</h2>
+                <p>03 23 45 27 49</p>
+                <p>boba-shop@gmail.com</p>
                 <h3>Nos réseaux sociaux</h3>
+                <div class="social-media">
+                    <ul>
+                        <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="your-boba">
-            <h1 class="boba-header">--- Votre <br>commande ---</h1>
-            <img class="choose-boba" src="img/drink-3545791_1280-removebg-preview.png" alt="">
-            <div class="sizes">
-                <h2>-- Bubble Tea --</h2>
-                <h3>Tailles</h3>
-                <label for="s-size">Small</label>
-                <input id="s-size" type="radio">
-                <label for="m-size">Medium</label>
-                <input id="m-size" type="radio">
-                <label for="l-size">Large</label>
-                <input id="l-size" type="radio"> 
-            </div>
-            <div class="supplements">
-                <h3>Supléments</h3>
-                <label for="chantilly">Chantilly</label>
-                <input id="chantilly" type="checkbox">
-                <label for="chcocolat">Chcocolat</label>
-                <input id="chcocolat" type="checkbox">
-                <label for="caramel">Caramel</label>
-                <input id="caramel" type="checkbox"> <br>
-                <label for="glace">Glace vanille</label>
-                <input id="glace" type="checkbox">
-                <label for="lait">Lait fouété</label>
-                <input id="lait" type="checkbox">
-                <label for="lait matcha">Lait fouété matcha</label>
-                <input id="lait matcha" type="checkbox">
-                <h2>-- Dessert --</h2>
-                <h2>-- Boisson Chaude --</h2>
-            </div>
-            <div class="order">
-                <button class="btn-go-on" type="submit">Continuer</button>
+        <div class="menu">
+            <div class="menu-card">
+                <h1>--- Notre carte ---</h1>
+                <h2>-- Nos Bubble Tea --</h2>
+                <h3>A base de lait</h3>
+                <ul>
+                    <li>Sucre brun</li>
+                    <li>Thé Matcha</li>
+                    <li>Fraise</li>
+                    <li>Café</li>
+                    <li>Chocolat</li>
+                    <li>Taro</li>
+                </ul>
+                <h3>A base de thé</h3>
+                <ul>
+                    <li>Tea noir</li>
+                    <li>Thé vert</li>
+                    <li>Thé vert menthe</li>
+                    <li>Thé vert jasmin</li>
+                    <li>Rooibos</li>
+                    <li>Thé noir fruits rouges</li>
+                </ul>
+
+                <h2>-- Nos glaces et desserts --</h2>
+                <ul>
+                    <li>Coupe glacée</li>
+                    <li>Crêpes garnies</li>
+                    <li>Gauffres</li>
+                    <li>Yaourt glacé</li>
+                    <li>Mochi glacé</li>
+                </ul>
+
+                <h2>-- Nos boissons chaudes --</h2>
+                <ul>
+                    <li>Iced Americano</li>
+                    <li>Matcha latte</li>
+                    <li>Caramel Macchiato</li>
+                    <li>Chocolat chaud</li>
+                    <li>Latte</li>
+                    <li>Dalgona Coffee</li>
+                </ul>
             </div>
         </div>
+
+        <div class="order-boba">
+                <div class="your-boba">
+                <h1 class="boba-header">--- Votre <br>commande ---</h1>
+                <img class="choose-boba" src="img/drink-3545791_1280-removebg-preview.png" alt="">
+                <div class="sizes">
+                    <h2>-- Bubble Tea --</h2>
+                    <h3>Tailles</h3>
+                    <label for="s-size">Small</label>
+                    <input id="s-size" type="radio">
+                    <label for="m-size">Medium</label>
+                    <input id="m-size" type="radio">
+                    <label for="l-size">Large</label>
+                    <input id="l-size" type="radio"> 
+                </div>
+                <div class="supplements">
+                    <h3>Supléments</h3>
+                    <label for="chantilly">Chantilly</label>
+                    <input id="chantilly" type="checkbox">
+                    <label for="chcocolat">Chcocolat</label>
+                    <input id="chcocolat" type="checkbox">
+                    <label for="caramel">Caramel</label>
+                    <input id="caramel" type="checkbox"> <br>
+                    <label for="glace">Glace vanille</label>
+                    <input id="glace" type="checkbox">
+                    <label for="lait">Lait fouété</label>
+                    <input id="lait" type="checkbox">
+                    <label for="lait matcha">Lait fouété matcha</label>
+                    <input id="lait matcha" type="checkbox">
+                    <h2>-- Dessert --</h2>
+                    <h2>-- Boisson Chaude --</h2>
+                </div>
+                <div class="order">
+                    <button class="btn-go-on" type="submit">Continuer</button>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
-    <footer>
+   <footer>
 
     </footer>
 </body>

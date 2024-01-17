@@ -17,19 +17,28 @@ h1{
     font-weight: 800;
 }
 
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 620px);
+    grid-template-rows: repeat(4, 400px);
+    grid-gap: 64px;
+}
+
 .menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-column: 2;
+    grid-row: 1 / 4;
 }
 
 .menu-card{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: rgb(255, 197, 239);
-    width: 600px;
     border-radius: 50px;
-    padding-bottom: 32px;
     margin-bottom: 32px;
+    padding: 0 32px 32px 32px;
+    width: fit-content;
+    height: fit-content;
 }
 
 h2{
@@ -50,21 +59,21 @@ li{
     font-weight: 400;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
+.map{
+    grid-column: 1;
+  grid-row: 1 / 4;
 }
 
 .maps{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 0;
     text-align: center;
     background-color: rgb(161, 254, 223);
     border-radius: 50px;
-    margin-left: 250px;
     padding: 0 32px 32px 32px;
+    margin: 0 0 32px 170px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .map-header, .boba-header{
@@ -73,36 +82,46 @@ li{
     margin-bottom: 16px;
 }
 
+.contact{
+    grid-column: 1;
+    grid-row: 2 / 4;
+}
+
 .contact-us{
     background-color: rgb(254, 195, 195);
-    width: 350px;
-    height: 400px;
     text-align: center;
     display: flex;
+    width: fit-content;
+    height: fit-content;
     flex-direction: column;
-    position: absolute;
-    left: 250px;
     border-radius: 50px;
-    margin-top: 420px;
-    margin-right: 120px;
+    padding: 32px;
+    margin: 0 0 32px 200px;
+}
+
+.social-media{
+    
+}
+
+.order-boba{
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .your-boba{
     background-color: rgb(252, 241, 177);
-    width: 500px;
+    width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: 0;
     border-radius: 50px;
-    margin-right: 80px;
-    padding-bottom: 32px;
+    padding: 32px;
+    margin-bottom: 32px;
 }
 
 .choose-boba{
     width: 250px;
-    margin-left: 130px;
+    margin-left: 80px;
 }
 
 .sizes, .supplements{

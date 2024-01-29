@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .img-logo{
@@ -8,12 +9,70 @@ body{
     justify-content: center;
 }
 
+.switch{
+    display: inline-block;
+    width: 70px;
+    position: relative;
+    height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.switch input{
+    position: absolute;
+	top: -30px;
+	left: -30px;
+	width: 0;
+	height: 0;
+}
+
+.switch input + span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00aced;
+    border-radius: 20px;
+}
+
+.switch input:checked + span {
+    background-color: #bc2a8d;
+}
+
+.switch input + span::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 32px;
+    height: 32px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+}
+
 .counter, .flash-sale{
     color: rgb(255, 255, 255);
     background-color: rgb(24, 24, 24);
     text-align: center;
     padding: 5px 0;
     margin: 0;
+    font-weight: bold;
+}
+
+.switch input:checked + span:before {
+	left: 34px;
+}
+
+.dark{
+    background-color: rgb(24, 24, 24);
+}
+
+.purple{
+    background-color: #ab53f9;
 }
 
 h1{
@@ -25,8 +84,8 @@ h1{
 
 .content{
     display: grid;
-    grid-template-columns: repeat(3, 620px);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-columns: repeat(3, 500px, 620px, 620px);
+    grid-template-rows: repeat(3, 390px);
     grid-gap: 32px;
     margin-top: 64px;
 }
@@ -78,7 +137,7 @@ li{
     background-color: rgb(161, 254, 223);
     border-radius: 50px;
     padding: 0 32px 32px 32px;
-    margin: 0 0 32px 270px;
+    margin: 0 0 32px 200px;
     width: fit-content;
     height: fit-content;
 }
@@ -103,7 +162,7 @@ li{
     flex-direction: column;
     border-radius: 50px;
     padding: 32px;
-    margin: 0 0 32px 270px;
+    margin: 0 0 32px 200px;
 }
 
 .social-media{
@@ -203,6 +262,7 @@ li{
     border-radius: 20px;
     color: aliceblue;
     background-color: rgb(24, 24, 24);
+    border: 3px solid rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 600;
 }
@@ -213,11 +273,43 @@ li{
 
 footer{
     height: 300px;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(0, 0, 0);
     width:1904px;
     color: aliceblue;
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 1800px){
+ .contact-us {
+    margin: 0 0 32px 20px;
+ }
+ .maps {
+    margin: 0 0 32px 20px;
+ }
+}
 
+@media screen and (max-width: 390px){
+    .content {
+        display: block;
+    }
+    .contact-us {
+        margin: 16px;
+     }
+     .maps {
+        margin: 16px;
+     }
+     .menu-card {
+        padding: 0;
+        padding-bottom: 20px;
+        width: 350px;
+        margin: 10px;
+     }
+     .your-boba{
+        width: 350px;
+        padding: 0;
+        margin: 10px;
+        padding-bottom: 20px;
+     }
+     footer{
+        width: 388px;
+     }
 }

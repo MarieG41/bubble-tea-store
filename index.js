@@ -13,3 +13,12 @@ setInterval(() => {
     counter.innerText = `${minutes}:${seconds}`;
     time = time <= 0 ? 0 : time -1;
 }, 1000);
+
+let darkBtn = document.querySelector('.switch input');
+let darkFlash = document.querySelector('.flash-sale');
+
+darkBtn.addEventListener('click', function () {
+    document.body.classList.toggle('dark');
+    darkFlash.classList.toggle('purple');
+    counter.classList.toggle('purple');
+})

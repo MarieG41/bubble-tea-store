@@ -72,3 +72,47 @@ linkChocolate.addEventListener('click', function () {
 linkTaro.addEventListener('click', function () {
     taro.classList.toggle('reveal');
 })
+
+linkBlackTea.addEventListener('click', function () {
+    blackTea.classList.toggle('reveal');
+})
+
+linkGreenTea.addEventListener('click', function () {
+    greenTea.classList.toggle('reveal');
+})
+
+linkMintTea.addEventListener('click', function () {
+    mintTea.classList.toggle('reveal');
+})
+
+linkJasminTea.addEventListener('click', function () {
+    jasminTea.classList.toggle('reveal');
+})
+
+linkRooibosTea.addEventListener('click', function () {
+    rooibosTea.classList.toggle('reveal');
+})
+
+
+let small = document.getElementById('s-size');
+let large = document.getElementById('l-size');
+let prixBase = document.getElementById('total');
+let medium = document.getElementById('m-size');
+
+small.addEventListener('click', updatePrixSmall);
+
+function updatePrixSmall(){
+    prixBase.textContent = '3.50 €'
+}
+
+medium.addEventListener('click', updatePrixMed);
+
+function updatePrixMed() {
+    prixBase.textContent = '4.50 €';
+}
+
+large.addEventListener('click', updatePrixLarge);
+
+function updatePrixLarge(){
+    prixBase.textContent = '5.50 €';
+}
